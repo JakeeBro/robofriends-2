@@ -1,0 +1,24 @@
+.input-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+input {
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    padding: .5vh;
+    width: 35vw;
+    height: 5vh;
+    font-size: 3vh;
+    border: none;
+    border-radius: 5px;
+    transition: .2s;
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
+}
+
+input:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
