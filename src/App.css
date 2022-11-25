@@ -1,6 +1,7 @@
 header {
     text-align: center;
     justify-content: center;
+    color: white;
 }
 
 h1 {
@@ -10,6 +11,11 @@ h1 {
 
 h2 {
     font-size: 2vw;
+    font-style: italic;
+}
+
+.glow {
+    text-shadow: 0 0 15px #FFFFFF;
 }
 
 .inline {

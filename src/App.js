@@ -8,7 +8,7 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            // robots: robots,
+            robots: robots,
             searchfield: ''
         }
     }
@@ -24,14 +24,14 @@ class App extends Component {
 
     render() {
         // Create a new Array containing the filtered list using the updated State
-        const filteredRobots = /*this.state.*/robots.filter(robot => {
+        const filteredRobots = this.state.robots.filter(robot => {
             return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
         })
 
         return (
             <div>
                 <header>
-                    <h1>RoboFriends <span><h2 className={'inline'}>v2.0</h2></span></h1>
+                    <h1>RoboFriends <span><h2 className={'inline glow'}>v2.0</h2></span></h1>
                 </header>
                 <SearchBox searchChange={this.onSearchChange}/>
                 <CardList robots={filteredRobots}/>

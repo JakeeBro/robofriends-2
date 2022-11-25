@@ -11,12 +11,13 @@
     overflow: hidden;
     transition: .2s;
     -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
-    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.5);
 }
 
 .card:hover {
     cursor: pointer;
     transform: scale(105%);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 
 img {
@@ -25,8 +26,7 @@ img {
     padding: 0;
     width: 15vw;
     height: 20vw;
-    background: rgb(55,55,55);
-    background: linear-gradient(0deg, rgba(55,55,55,1) 60%, rgba(30,30,30,1) 100%);
+    background-color: rgba(255,255,255,0.25);
     object-fit: cover;
 }
 
@@ -40,13 +40,15 @@ img {
     height: fit-content;
     color: white;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(88,88,88,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%);
+    text-shadow: 1px 1px 2px #000000;
 }
 
 h2 {
     margin: 0;
     padding: 0;
     font-size: 1rem;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 p {
